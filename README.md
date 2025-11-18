@@ -9,7 +9,7 @@ Este é um projeto [Next.js](https://nextjs.org) gerado a partir de [`create-nex
 3. Crie o seu próprio repositório a partir deste
 4. Abra o VS Code
 5. Clone o seu repositório, inserindo o URL do seu repo
-6. instale as dependencias com `com install`
+6. instale as dependencias com `npm install`
 7. Corra o servidor de desenvolvimento com `npm run dev`
 8. Abra [http://localhost:3000](http://localhost:3000) com o seu browser para ver a aplicação.
 9. Garanta que tem File/AutoSave ativado
