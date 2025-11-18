@@ -1,6 +1,8 @@
-ESte é um projeto [Next.js](https://nextjs.org) bootstraped com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto para aula-2 de React & Next.js
 
-## Getting Started
+Este é um projeto [Next.js](https://nextjs.org) gerado a partir de [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Passos para utilizar este projeto
 
 1. Clique no link do repositório GitHub https://github.com/ULHT-PW/next-aula-02
 2. Clicar em Fork
