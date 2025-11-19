@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react";
+import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,12 +27,22 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
 
   // Variaveis
 
+  const [isColorido , setColorido] = useState(false);
+
+  function toggleCor(){
+    setColorido(!isColorido);
+  
+  }
+
   const data = new Date()
 
   // Rendering
 
   return (
     <html lang="en">
+
+      <header className = {isColorido ? "colorido" : ""}>{children}</header>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased
           
@@ -40,6 +54,11 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
                           w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
           {children}
         </main>
+
+        <div>
+          <button onClick={toggleCor}>Alterar cor</button>
+        </div>
+        
         <footer>DIW, {data.getFullYear()}</footer>
       </body>
     </html>
